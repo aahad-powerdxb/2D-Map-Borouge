@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2d-map-borouge</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- The Floating Sidebar UI -->
+    <div id="office-sidebar" class="sidebar">
+      <button id="close-btn" class="close-btn">&times;</button>
+      <h2 id="office-title">Global Office</h2>
+      
+      <video id="office-video" controls>
+        <!-- The src will be injected via JavaScript -->
+      </video>
+      
+      <p id="office-description">Details about this location will appear here.</p>
+    </div>
+
+    <!-- The Legend UI -->
+    <div id="legend-panel" class="legend">
+      <h3>Locations</h3>
+      <div class="legend-item"><span class="color-dot type-a"></span> Headquarters</div>
+      <div class="legend-item"><span class="color-dot type-b"></span> Regional Branches</div>
+      <div class="legend-item"><span class="color-dot type-c"></span> Corporate Hubs</div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
